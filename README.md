@@ -1,5 +1,5 @@
 # Material-tabs
-Scrollable tab and custom tab view deisgn
+Scrollable tabs and custom tabs view deisgn
 
 Screenshots
 ===========
