@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
-    private Button btnScrollableTabs, btnIconTextTabs;
+    private Button btnScrollableTabs, btnIconTextTabs, btnIconTabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnScrollableTabs = (Button) findViewById(R.id.btnScrollableTabs);
         btnIconTextTabs = (Button) findViewById(R.id.btnIconTextTabs);
+        btnIconTabs = (Button) findViewById(R.id.btnIconTabs);
 
         btnScrollableTabs.setOnClickListener(this);
         btnIconTextTabs.setOnClickListener(this);
+        btnIconTabs.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnIconTextTabs:
                 startActivity(new Intent(MainActivity.this, IconTextTabsActivity.class));
+                break;
+            case R.id.btnIconTabs:
+                startActivity(new Intent(MainActivity.this, BottomIconTabsActivity.class));
                 break;
         }
     }

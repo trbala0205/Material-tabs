@@ -18,6 +18,7 @@
     
     <string name="btn_scrollable_tabs">Scrollable Tabs</string>
     <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Icon Tabs</string>
     
 
 </resources>
